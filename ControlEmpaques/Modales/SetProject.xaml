@@ -1,0 +1,17 @@
+﻿<Window x:Class="ControlEmpaques.Modales.SetProject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" ResizeMode="NoResize"
+        Title="Seleccionar proyecto" Height="170" Width="270" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <TextBlock x:Name="TextBlock" Height="40" Margin="10,10,10,0" FontSize="13"
+                   TextWrapping="Wrap" Text="Utiliza el lector de codigo de barras o escribe el numero de proyecto" 
+                   VerticalAlignment="Top" TextAlignment="Center"/>
+        <TextBox x:Name="TxtProyecto" Height="23" Margin="10,55,10,0" TextWrapping="Wrap" VerticalAlignment="Top"
+                 KeyUp="TxtProyecto_KeyUp"/>
+        <Button x:Name="BtnAceptar" Content="Aceptar" HorizontalAlignment="Left" Margin="95,95,0,0" Width="76" Height="30" VerticalAlignment="Top" Click="BtnAceptar_Click"/>
+
+    </Grid>
+</Window>
